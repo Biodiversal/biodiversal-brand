@@ -1,0 +1,90 @@
+{
+  "$schema": "https://tr.designtokens.org/format/",
+  "$metadata": {
+    "name": "Biodiversal Design Tokens",
+    "version": "1.0.0",
+    "updated": "2026-05-25",
+    "maintainer": "generalmanager@biodiversal.com",
+    "source": "Manual de Marca Biodiversal 2021 + Claude Design Reference 2026"
+  },
+
+  "color": {
+    "navy":      { "$value": "#3E4D58", "$type": "color", "$description": "Primario. Fondos oscuros, texto principal, encabezados, pie de página. CMYK: C75 M55 Y45 K40." },
+    "teal":      { "$value": "#50827C", "$type": "color", "$description": "Secundario. Acentos, datos, barras de progreso, indicadores positivos. CMYK: C70 M31 Y48 K15." },
+    "terracota": { "$value": "#DA7052", "$type": "color", "$description": "Acento. Highlights, CTAs, cifras clave, tags. CMYK: C11 M66 Y68 K2." },
+    "menta":     { "$value": "#BDE0D6", "$type": "color", "$description": "Acento suave. Fondos alternativos, texto sobre Navy, separadores." },
+    "beige":     { "$value": "#CDC4B4", "$type": "color", "$description": "Fondo neutro. Páginas interiores, fondos de tarjetas, separadores." },
+
+    "extended": {
+      "rosa":     { "$value": "#F18EA3", "$type": "color", "$description": "Acento decorativo únicamente." },
+      "amarillo": { "$value": "#E7CE36", "$type": "color", "$description": "Acento decorativo únicamente." },
+      "lavanda":  { "$value": "#AA94A7", "$type": "color", "$description": "Acento decorativo únicamente." }
+    },
+
+    "surface": {
+      "white":  { "$value": "#FFFFFF", "$type": "color" },
+      "cream":  { "$value": "#F5F2EC", "$type": "color", "$description": "Fondo de páginas interiores y documentos." },
+      "body":   { "$value": "#4A5A63", "$type": "color", "$description": "Texto de cuerpo sobre fondo claro." },
+      "note":   { "$value": "#888888", "$type": "color", "$description": "Notas y pie de página." }
+    },
+
+    "semantic": {
+      "success": { "$value": "#50827C", "$type": "color", "$description": "Teal" },
+      "warning": { "$value": "#E7CE36", "$type": "color", "$description": "Amarillo" },
+      "danger":  { "$value": "#DA7052", "$type": "color", "$description": "Terracota" },
+      "info":    { "$value": "#BDE0D6", "$type": "color", "$description": "Menta" }
+    },
+
+    "subbrands": {
+      "biogrowth": { "$value": "#50827C", "$type": "color", "$description": "Teal — crecimiento" },
+      "biotech":   { "$value": "#3E4D58", "$type": "color", "$description": "Navy — precisión técnica" },
+      "bioimpact": { "$value": "#DA7052", "$type": "color", "$description": "Terracota — impacto y comunidad" }
+    }
+  },
+
+  "typography": {
+    "fontFamily": {
+      "display": { "$value": "'Prata', Georgia, serif",                         "$type": "fontFamily", "$description": "Títulos de portada únicamente" },
+      "heading":  { "$value": "'Playfair Display', Georgia, serif",             "$type": "fontFamily", "$description": "Encabezados de sección H1-H3" },
+      "sans":     { "$value": "'Inter', system-ui, -apple-system, sans-serif",  "$type": "fontFamily", "$description": "UI digital y cuerpo web" },
+      "body":     { "$value": "'Calibri', 'Trebuchet MS', sans-serif",          "$type": "fontFamily", "$description": "Cuerpo en documentos Office" }
+    },
+    "fontSize": {
+      "display": { "$value": "48px", "$type": "dimension", "$description": "32–48pt según contexto" },
+      "h1":      { "$value": "28px", "$type": "dimension", "$description": "20–28pt" },
+      "h2":      { "$value": "20px", "$type": "dimension" },
+      "kpi":     { "$value": "32px", "$type": "dimension", "$description": "22–36pt para cifras destacadas" },
+      "body":    { "$value": "11px", "$type": "dimension", "$description": "10–11pt en documentos" },
+      "eyebrow": { "$value": "10px", "$type": "dimension", "$description": "9–11pt UPPERCASE" },
+      "note":    { "$value": "9px",  "$type": "dimension", "$description": "8–9pt para notas y pie" }
+    },
+    "fontWeight": {
+      "regular":  { "$value": 400, "$type": "fontWeight" },
+      "semibold": { "$value": 600, "$type": "fontWeight" },
+      "bold":     { "$value": 700, "$type": "fontWeight" }
+    }
+  },
+
+  "spacing": {
+    "1":  { "$value": "4px",  "$type": "dimension" },
+    "2":  { "$value": "8px",  "$type": "dimension" },
+    "3":  { "$value": "12px", "$type": "dimension" },
+    "4":  { "$value": "16px", "$type": "dimension" },
+    "5":  { "$value": "20px", "$type": "dimension" },
+    "6":  { "$value": "24px", "$type": "dimension" },
+    "8":  { "$value": "32px", "$type": "dimension" },
+    "10": { "$value": "40px", "$type": "dimension" },
+    "12": { "$value": "48px", "$type": "dimension" },
+    "16": { "$value": "64px", "$type": "dimension" },
+    "20": { "$value": "80px", "$type": "dimension" },
+    "24": { "$value": "96px", "$type": "dimension" }
+  },
+
+  "borderRadius": {
+    "xs":   { "$value": "2px",   "$type": "dimension" },
+    "sm":   { "$value": "4px",   "$type": "dimension", "$description": "Default según manual (4–6px)" },
+    "md":   { "$value": "6px",   "$type": "dimension" },
+    "lg":   { "$value": "10px",  "$type": "dimension" },
+    "pill": { "$value": "999px", "$type": "dimension" }
+  }
+}
