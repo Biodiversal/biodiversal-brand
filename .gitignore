@@ -1,0 +1,14 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Adobe/Corel originals — track .ai and .cdr in git-lfs only
+*.psd
+
+# Large binary assets — use git-lfs for files > 10 MB
+# Configure with: git lfs track "*.png" "*.pdf" "*.zip"
+
+# Editor
+.vscode/
+.idea/
+*.swp
