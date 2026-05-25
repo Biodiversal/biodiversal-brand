@@ -1,0 +1,140 @@
+/**
+ * Biodiversal Design Tokens
+ * CSS Custom Properties — importar en cualquier proyecto web
+ *
+ * Fuente: Manual de Marca Biodiversal 2021 + Claude Design Reference 2026
+ * Sistema: Navy-first para portadas/énfasis · Cream/White para contenido
+ * Updated: 2026-05-25
+ */
+
+:root {
+
+  /* ─── COLOR — Gama Principal ─── */
+  --bv-navy:       #3E4D58;   /* Primario: fondos oscuros, texto, encabezados, pie de página */
+  --bv-teal:       #50827C;   /* Secundario: acentos, datos, barras de progreso, indicadores */
+  --bv-terracota:  #DA7052;   /* Acento: highlights, CTAs, cifras clave, tags */
+  --bv-menta:      #BDE0D6;   /* Acento suave: fondos alternativos, texto sobre Navy */
+  --bv-beige:      #CDC4B4;   /* Fondo neutro: páginas interiores, tarjetas, separadores */
+
+  /* ─── COLOR — Gama Extendida (decorativa) ─── */
+  --bv-rosa:       #F18EA3;   /* Acento decorativo */
+  --bv-amarillo:   #E7CE36;   /* Acento decorativo */
+  --bv-lavanda:    #AA94A7;   /* Acento decorativo */
+
+  /* ─── COLOR — Fondos del sistema ─── */
+  --bv-white:      #FFFFFF;
+  --bv-cream:      #F5F2EC;   /* Fondo de páginas interiores */
+  --bv-text-body:  #4A5A63;   /* Texto de cuerpo sobre fondo claro */
+  --bv-text-note:  #888888;   /* Notas y pie de página */
+
+  /* ─── COLOR — Semánticos ─── */
+  --bv-success:    #50827C;   /* Teal */
+  --bv-warning:    #E7CE36;   /* Amarillo */
+  --bv-danger:     #DA7052;   /* Terracota */
+  --bv-info:       #BDE0D6;   /* Menta */
+
+  /* ─── COLOR — Sub-marcas ─── */
+  --bv-biogrowth:  #50827C;   /* Teal — crecimiento */
+  --bv-biotech:    #3E4D58;   /* Navy — precisión técnica */
+  --bv-bioimpact:  #DA7052;   /* Terracota — impacto y comunidad */
+
+  /* ─── GRADIENTES ─── */
+  --bv-gradient-hero:      linear-gradient(160deg, #3E4D58 0%, #50827C 100%);
+  --bv-gradient-cta:       linear-gradient(140deg, #DA7052 0%, #E88A6A 100%);
+  --bv-gradient-surface:   linear-gradient(180deg, #F5F2EC 0%, #FFFFFF 100%);
+  --bv-gradient-biochar:   linear-gradient(135deg, #DA7052 0%, #BDE0D6 100%);
+
+  /* ─── TIPOGRAFÍA ─── */
+  /* Fuentes primarias (disponibles Google Fonts) */
+  --bv-font-display:  'Prata', Georgia, serif;                          /* Títulos de portada */
+  --bv-font-heading:  'Playfair Display', Georgia, serif;               /* Encabezados de sección */
+  --bv-font-sans:     'Inter', system-ui, -apple-system, sans-serif;    /* UI digital, body web */
+  --bv-font-body:     'Calibri', 'Trebuchet MS', sans-serif;            /* Cuerpo en documentos */
+  --bv-font-eyebrow:  'Calibri', 'Trebuchet MS', sans-serif;            /* Tags en caps (sub. Vanguard) */
+
+  /* Escala de tamaños */
+  --bv-text-display:   48px;   /* Portada: 32–48pt */
+  --bv-text-h1:        28px;   /* Encabezado sección: 20–28pt */
+  --bv-text-h2:        20px;   /* Subtítulo: 16–20pt */
+  --bv-text-h3:        16px;   /* Sub-subtítulo */
+  --bv-text-kpi:       32px;   /* Cifras destacadas: 22–36pt */
+  --bv-text-body:      11px;   /* Cuerpo doc: 10–11pt */
+  --bv-text-sm:        10px;   /* Texto secundario */
+  --bv-text-eyebrow:   10px;   /* Tags/eyebrow: 9–11pt */
+  --bv-text-note:       9px;   /* Notas y pie: 8–9pt */
+
+  /* Pesos */
+  --bv-weight-regular:  400;
+  --bv-weight-semibold: 600;
+  --bv-weight-bold:     700;
+
+  /* Line-heights */
+  --bv-lh-tight:   1.2;
+  --bv-lh-snug:    1.4;
+  --bv-lh-normal:  1.6;
+  --bv-lh-loose:   1.8;
+
+  /* Letter-spacing */
+  --bv-tracking-tight:   -0.01em;
+  --bv-tracking-normal:   0em;
+  --bv-tracking-caps:     0.10em;   /* Eyebrows y tags en UPPERCASE */
+
+  /* ─── SPACING — Grilla 4pt ─── */
+  --bv-space-1:    4px;
+  --bv-space-2:    8px;
+  --bv-space-3:   12px;
+  --bv-space-4:   16px;
+  --bv-space-5:   20px;
+  --bv-space-6:   24px;
+  --bv-space-8:   32px;
+  --bv-space-10:  40px;
+  --bv-space-12:  48px;
+  --bv-space-16:  64px;
+  --bv-space-20:  80px;
+  --bv-space-24:  96px;
+
+  /* ─── BORDES Y RADIOS ─── */
+  --bv-radius-xs:    2px;
+  --bv-radius-sm:    4px;    /* Tarjetas: 4–6px según manual */
+  --bv-radius-md:    6px;
+  --bv-radius-lg:   10px;
+  --bv-radius-pill: 999px;
+
+  --bv-border-subtle:   1px solid rgba(62, 77, 88, 0.10);
+  --bv-border-default:  1px solid rgba(62, 77, 88, 0.20);
+  --bv-border-strong:   1.5px solid #3E4D58;
+  --bv-border-teal:     3px solid #50827C;      /* Borde izquierdo en notas metodológicas */
+  --bv-border-terracota: 3px solid #DA7052;     /* Barra de acento en portadas */
+  --bv-border-focus:    2px solid #50827C;
+
+  /* ─── ELEVACIÓN ─── */
+  --bv-shadow-sm:
+    0 1px 3px rgba(62, 77, 88, 0.08),
+    0 2px 8px  rgba(62, 77, 88, 0.05);
+
+  --bv-shadow-md:
+    0 4px 12px rgba(62, 77, 88, 0.12),
+    0 8px 20px rgba(62, 77, 88, 0.08);
+
+  --bv-shadow-lg:
+    0 12px 40px rgba(62, 77, 88, 0.18);
+
+  --bv-shadow-focus:
+    0 0 0 3px rgba(80, 130, 124, 0.30);
+
+  /* ─── LAYOUT ─── */
+  --bv-max-width:            1140px;
+  --bv-max-width-editorial:   820px;
+  --bv-nav-height:             60px;
+  --bv-section-padding-y:      80px;
+  --bv-section-padding-y-sm:   48px;
+  --bv-gutter:                 48px;
+  --bv-gutter-sm:              20px;
+
+  /* ─── ANIMACIÓN ─── */
+  --bv-ease-out:    cubic-bezier(0.25, 1, 0.5, 1);
+  --bv-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --bv-duration-fast:   120ms;
+  --bv-duration-base:   200ms;
+  --bv-duration-slow:   350ms;
+}
